@@ -7,5 +7,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+    setInterval(() => {
+        console.log("Job task running")
+    }, 1000)
     console.log(`Server is running on port ${port}`);
 });
